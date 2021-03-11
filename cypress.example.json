@@ -1,0 +1,9 @@
+{
+  "baseUrl": "http://nginx:8080",
+  "chromeWebSecurity": false,
+  "video": false,
+  "env": {
+    "drupalDrushCmdLine": "/usr/local/bin/drush %command"
+  },
+  "testFiles": "**/*.test.js"
+}

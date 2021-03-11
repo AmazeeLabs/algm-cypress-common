@@ -1,2 +1,2 @@
-# algm-cypress-common
-Common cypress tests that will be pulled in via Jenkins
+# [ALGM] Common Cypress Tests
+These are the common cypress test that will be pulled in as apart of Jenkins.

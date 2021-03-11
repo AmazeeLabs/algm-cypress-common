@@ -1,0 +1,6 @@
+{
+  "baseUrl": "[REPLACE_WITH_BASE_URL]",
+  "chromeWebSecurity": false,
+  "video": false,
+  "testFiles": "**/*.test.js"
+}

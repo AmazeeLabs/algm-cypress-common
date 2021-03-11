@@ -1,0 +1,12 @@
+{
+    "name": "amazeelabs/cypress-common",
+    "description": "Common cypress tests",
+    "type": "drupal-custom-module",
+    "authors": [
+        {
+            "name": "eli.stone",
+            "email": "eli.stone@amazee.com"
+        }
+    ],
+    "require": {}
+}
