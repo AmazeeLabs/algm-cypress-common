@@ -2,5 +2,14 @@
   "baseUrl": "[REPLACE_WITH_BASE_URL]",
   "chromeWebSecurity": false,
   "video": false,
-  "testFiles": "**/*.test.js"
+  "testFiles": "**/*.test.js",
+  "env": {
+    "drupalDrushCmdLine": "/usr/local/bin/drush %command",
+    "homepage": {
+      "enabled": true,
+      "cookie": {
+        "class" : ".optanon-alert-box-wrapper"
+      }
+    }
+  }
 }

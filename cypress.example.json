@@ -2,8 +2,14 @@
   "baseUrl": "http://nginx:8080",
   "chromeWebSecurity": false,
   "video": false,
+  "testFiles": "**/*.test.js",
   "env": {
-    "drupalDrushCmdLine": "/usr/local/bin/drush %command"
-  },
-  "testFiles": "**/*.test.js"
+    "drupalDrushCmdLine": "/usr/local/bin/drush %command",
+    "homepage": {
+      "enabled": true,
+      "cookie": {
+        "class" : ".optanon-alert-box-wrapper"
+      }
+    }
+  }
 }
