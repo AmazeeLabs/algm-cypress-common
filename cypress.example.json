@@ -5,6 +5,9 @@
   "testFiles": "**/*.test.js",
   "env": {
     "drupalDrushCmdLine": "/usr/local/bin/drush %command",
+    "skipped_tests": [
+
+    ],
     "homepage": {
       "enabled": true,
       "cookie": {
