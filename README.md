@@ -1,4 +1,4 @@
-<img src="../images/logo.png" alt="Common Cypress Tests logo" title="Common Cypress Tests" align="right" height="60" />
+<img src="./images/logo.png" alt="Common Cypress Tests logo" title="Common Cypress Tests" align="right" height="60" />
 
 # Common Cypress Tests
 
