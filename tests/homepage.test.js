@@ -2,11 +2,11 @@ describe('Homepage validation', () => {
   const envSettings = Cypress.env('homepage');
 
   before(() => {
-    cy.skipOn(envSettings.enabled !== true);
+    cy.checkIfSkipped('homepage').then(status => cy.skipOn(status));
     cy.visit('/');
   });
 
-  it('it has only one h1 tag', () => {
+  it('has only one h1 tag', () => {
     cy.checkIfSkipped('homepage.one_h1').then(status => cy.skipOn(status));
     cy.get('h1').should('have.length', 1).and('not.be.empty');
   });
@@ -18,7 +18,14 @@ describe('Homepage validation', () => {
 
   it('has cookie banner displayed', () => {
     cy.checkIfSkipped('homepage.cookie_banner').then(status => cy.skipOn(status));
-    const cookieSettings = envSettings['cookie'];
-    cy.get(cookieSettings['class']).should('be.visible');
+    cy.get(envSettings['cookie.class']).should('be.visible');
   });
+
+  it('checks all links in menu are valid', () => {
+    cy.checkIfSkipped('homepage.check_all_menu_links').then(status => cy.skipOn(status));
+    cy.get(envSettings['menu-link.class']).each(page => {
+      cy.request(page.prop('href'));
+    })
+  });
+
 });

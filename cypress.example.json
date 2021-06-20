@@ -1,18 +1,14 @@
 {
-  "baseUrl": "http://nginx:8080",
+  "baseUrl": "[REPLACE_WITH_BASE_URL]",
   "chromeWebSecurity": false,
   "video": false,
   "testFiles": "**/*.test.js",
   "env": {
     "drupalDrushCmdLine": "/usr/local/bin/drush %command",
-    "skipped_tests": [
-
-    ],
+    "skipped_tests": [],
     "homepage": {
-      "enabled": true,
-      "cookie": {
-        "class" : ".optanon-alert-box-wrapper"
-      }
+      "cookie.class": ".optanon-alert-box-wrapper",
+      "menu-link.class": ".navigation.menu--main .menu-item a"
     }
   }
 }

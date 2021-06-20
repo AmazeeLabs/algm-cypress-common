@@ -13,7 +13,7 @@ These are common cypress tests that are designed to be run across multiple Drupa
 
 ## Uses
 
-_TODO_
+Runs various kinds of common tests across standard Drupal websites. 
 
 ## Setup
 
